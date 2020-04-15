@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+
     <!--new boostrap theme From bootswatch.com (min.css -copy link Address)-->
   <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
   
@@ -120,7 +124,7 @@
  <section class="container" >     
         
   <div  id="home">
-        <h2> Parks </h2>
+        <h1> Parks </h1>
           <p>
           From wide, open spaces to quiet, secluded corners, city parks provide
            a much-needed sanctuary from the hustle and bustle of busy city life.
@@ -139,9 +143,9 @@
 </section> 
 
 
-<section class="container" class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
- 
-      <article>
+<section  class="container" >
+ <div class="row">
+      <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
       
         <div  id="melbourne" class="card" style="width: 18rem;">
           <img src="img/park-melbourne.jpg" class="card-img-top" alt="London park">
@@ -152,21 +156,27 @@
             <p class="card-text">
               Starting right here at home in Australia, the picturesque Royal Botanic
           Gardens in Melbourne spread out over almost 100 acres of colourful
-          tropical flora and fauna. With a significant and diverse collection
+          tropical flora and fauna.  
+          
+          
+          <button onclick="hidenTextFunction()">More</button>
+          
+
+          <span id="melburn-park-part">
+          With a significant and diverse collection
           of 50 000 plants, as well as native black swans, kookaburras and cockatoos,
            visitors can get a close look at a variety of delicate camellia, cacti
             and cycads. Peaceful lakes and sprawling lawns make for enjoyable
             nature tours, while outdoor theatre and exhibitions in the summer
-            months are a must see.            </p>
+            months are a must see.   </span>  
+                 </p>
           </div>
-        </div>
-       
-        
+        </div> 
        <a href="#start">Back</a>
  
       </article>
 
-      <article>
+      <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
 
         <div id="london" class="card" style="width: 18rem;">
           <img src="img/park-london.jpg" class="card-img-top" alt="London park">
@@ -204,7 +214,7 @@
 
       </article>
         
-      <article>
+      <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <div id="barcelona" class="card" style="width: 18rem;">
           <img src="img/park-barcelona.jpg" class="card-img-top" alt="London park">
           <div class="card-body">
@@ -230,7 +240,7 @@
 
       </article>
 
-      <article>
+      <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
 
         <div id="sanPaulo" class="card" style="width: 18rem;">
           <img src="img/park-san-paulo.jpg" class="card-img-top" alt="London park">
@@ -254,9 +264,7 @@
           <a href="#start">Back</a>
       </article>
 
-
-
-      <article>
+      <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
 
         <div  id="newYork" id="sanPaulo" class="card" style="width: 18rem;">
           <img src="img/park-san-paulo.jpg" class="card-img-top" alt="London park">
@@ -277,41 +285,40 @@
         
         <a href="#start">Back</a>
       </article>
-
+</div>
 </section>
 
 
-<section id="interesting-facts">
-        
-        <div>
-        <h3>6 Ways to Spend an Evening in the Parks</h3>
-        <p>Skip the sunburn, beat the crowds and enjoy a magical part of the day by
-        visiting Three Rivers Parks in the evening or at night — most parks are
-         open daily until 10 PM. Here are six free or low-cost ways to enjoy the
-         beauty of the parks after prime daytime hours:
-         </p>
-        <ol>
-        <li> Paddle under the light of a full moon.
-        <a href="#MoonWay">More...</a></li>
-        <li>See the stars
-        <a href="#StarWay">More...</a></li>
-          <li>Go on a sunset-viewing date.
-          <a href="#DateWay">More...</a></li>
-        <li>Try a family photo adventure.
-        <a href="#PhotoWay">More...</a></li>
-        <li>Hike at twilight or under a full moon.
-        <a href="#HikeWay">More...</a></li>
-        <li>Catch some sunnies.
-        <a href="#CathnWay">More...</a></li>
-        </ol>
-        
-        </div>
-        
-        <a href="#start">Back</a>
-        
-        <div>
-         <h3 id="MoonWay">Paddle under the light of a full moon.</h3>
-        <p>
+
+<section id="interesting-facts" class="container" >
+
+  <h3>6 Ways to Spend an Evening in the Parks</h3>
+  <p>Skip the sunburn, beat the crowds and enjoy a magical part of the day by
+  visiting Three Rivers Parks in the evening or at night — most parks are
+   open daily until 10 PM. Here are six free or low-cost ways to enjoy the
+   beauty of the parks after prime daytime hours:
+   </p>
+
+
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#MoonWay" role="tab" aria-controls="home"> Way 1.  Paddle under the light of a full moon</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#StarWay" role="tab" aria-controls="profile">Way 2.  See the stars</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#DateWay" role="tab" aria-controls="messages">Way 3.  Go on a sunset-viewing date.</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#PhotoWay" role="tab" aria-controls="settings">Way 4.  Try a family photo adventure. </a>
+   
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#HikeWay" role="tab" aria-controls="settings">Way 5.  Hike at twilight or under a full moon.</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#CathnWay" role="tab" aria-controls="settings">Way 6.  Catch some sunnies.</a>
+ 
+   
+   
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="MoonWay" role="tabpanel" aria-labelledby="list-home-list">
+       
         Join a Three Rivers guided moonlit paddle for a fun and low-cost adventure,
          or if you have your own paddlecraft, explore on your own. Less lake traffic
           at night makes for fewer waves and a more peaceful trip. It also offers
@@ -323,81 +330,57 @@
           more frogs, toads and singing birds than during the day.” Heather loves
            that the moonlight trips offer the opportunity to catch a fabulous
             sunset and moonrise.
-        </p>
         </div>
-        
-        <a href="#start">Back</a>
-        
-        <div>
-        <h3 id="StarWay">See the stars</h3>
-        <p>
+      <div class="tab-pane fade" id="StarWay" role="tabpanel" aria-labelledby="list-profile-list">
         When was the last time you looked up and saw the Milky Way? Sagittarius?
         For less light pollution and a great view, visit a restored prairie in a
          park reserve a little further out from the city, such as Crow-Hassan,
           Murphy-Hanrehan or Carver. Bring a blanket, bug spray and star map.
-        </p>
-        </div>
-        
-        
-        <a href="#start">Back</a>
-        
-        <div>
-        <h3 id="DateWay">Go on a sunset-viewing date.</h3>
-          <p>
-          What’s more romantic than watching the sun set together? And it’s
-           cheaper and more unique than dinner and a movie. Bring some wine
-            (ages 21+), cheese and a checkered tablecloth and you might even
-             forget you’re in Minnesota and think you are in a movie.
-        </p>
-        </div>
-        
-        <a href="#start">Back</a>
-        
-        <div>
-        <h3 id="PhotoWay"> Try a family photo adventure   </h3>
-        <p>
-          Everything looks a little different through the lens of a camera.
-          For a creative way to get a new view of the parks, what about
-           capturing landscapes on a photo adventure? You’ll miss the
-           harsh glare of the sun and capture changing and interesting light.
-            Plus, as wildlife tends to be more active in the evening, you may
-            even be able to capture some critter cameos.
-        </p>
-        </div>
-        
-        <a href="#start">Back</a>
-        
-        <div>
-          <h3 id="HikeWay"> Hike at twilight or under a full moon </h3>
-        <p>
+      </div>
+      <div class="tab-pane fade" id="DateWay" role="tabpanel" aria-labelledby="list-messages-list">
+        What’s more romantic than watching the sun set together? And it’s
+        cheaper and more unique than dinner and a movie. Bring some wine
+         (ages 21+), cheese and a checkered tablecloth and you might even
+          forget you’re in Minnesota and think you are in a movie.
+      </div>
+      <div class="tab-pane fade" id="PhotoWay" role="tabpanel" aria-labelledby="list-settings-list">
+        Everything looks a little different through the lens of a camera.
+        For a creative way to get a new view of the parks, what about
+         capturing landscapes on a photo adventure? You’ll miss the
+         harsh glare of the sun and capture changing and interesting light.
+          Plus, as wildlife tends to be more active in the evening, you may
+          even be able to capture some critter cameos.
+      </div>
+   
+      <div class="tab-pane fade" id="HikeWay" role="tabpanel" aria-labelledby="list-settings-list">
         If you want a chance to hear owls hoot or see deer or other animals
-         snacking, evening is the best time to adventure through the woods.
-          Three Rivers regularly offers low-cost guided hikes, or you can hike
-          on your own. You might be amazed at how quickly your eyes adjust
-           to the darkness and how much you can see, particularly when the
-           moon is full. As always, be safe with secure footwear, a map,
-           flashlight and water.
-        </p>
-        </div>
-        
-        <a href="#start">Back</a>
-        
-        <div>
-          <h3 id="CathnWay"> Catch some sunnies. </h3>
-        <p>
-          It’s well known that fish start looking for dinner at dusk.
-          Fishing is available at 17 parks, with accessible fishing piers
-           at 10 parks. Enjoy a picnic dinner and then head out on the water
-           or set up at a fishing pier. Boat rentals are available until 8 PM
-           at certain parks through Labor Day. Be sure to get your fishing
-            license ahead of time.
-        </p>
-        </div>
-        
-        <a href="#start">Back</a>
-        
+        snacking, evening is the best time to adventure through the woods.
+         Three Rivers regularly offers low-cost guided hikes, or you can hike
+         on your own. You might be amazed at how quickly your eyes adjust
+          to the darkness and how much you can see, particularly when the
+          moon is full. As always, be safe with secure footwear, a map,
+          flashlight and water.
+      </div>
+      <div class="tab-pane fade" id="CathnWay" role="tabpanel" aria-labelledby="list-settings-list">
+        It’s well known that fish start looking for dinner at dusk.
+        Fishing is available at 17 parks, with accessible fishing piers
+         at 10 parks. Enjoy a picnic dinner and then head out on the water
+         or set up at a fishing pier. Boat rentals are available until 8 PM
+         at certain parks through Labor Day. Be sure to get your fishing
+          license ahead of time.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<a href="#start">Back</a>
 </section>
-               
+
+
+
+
+
   
 <main class="container">
   <h3></h3>
@@ -570,6 +553,10 @@
     </div>
   </div>
 </div>
+
+
+
+<script src=js/index.js> </script>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
