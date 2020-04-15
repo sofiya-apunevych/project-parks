@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Park</title>
+    <title>ParK</title>
 
     <link rel="stylesheet" href="css/index.css">
 
@@ -23,7 +23,7 @@
 
 <body>
   <p id="start"></p>
-
+  <header class="container">
 <div>
 <span class="border border-primary"></span>
 <span class="border border-secondary"></span>
@@ -148,7 +148,7 @@
       <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
       
         <div  id="melbourne" class="card" style="width: 18rem;">
-          <img src="img/park-melbourne.jpg" class="card-img-top" alt="London park">
+          <img src="img/park-melbourne.jpg" class="card-img-top" alt="Melbourne park">
           <div class="card-body">
 
             <h2>Royal Botanic Gardens, Melbourne</h2>
@@ -159,7 +159,8 @@
           tropical flora and fauna.  
           
           
-          <button onclick="hidenTextFunction()">More</button>
+          <button onclick="hidenTextFunctionM()">Less</button>
+          <button onclick="VisibleTextFunctionM()">More</button>
           
 
           <span id="melburn-park-part">
@@ -183,7 +184,15 @@
           <div class="card-body">
             <h2>Hyde Park, London</h2>
             <p class="card-text"> Perhaps the most famous park in a city full of famous parks, Hyde Park
-              was originally built as Henry VIII’s hunting grounds. One of eight royal
+              was originally built as Henry VIII’s hunting grounds.
+              
+              
+          <button onclick="hidenTextFunctionL()">Less</button>
+          <button onclick="VisibleTextFunctionL()">More</button>
+          
+          
+          <span id="london-park-part">
+              One of eight royal
                parks within London, Hyde Park is one of the biggest and often finds
                 visitors renting a rowboat or paddleboat to explore the legendary
                 Serpentine Lake, or even taking a dip in its waters in the warmer
@@ -204,7 +213,7 @@
                a diverse range of assets to manage, AssetFinda provides a tailored
                 government system that can encapsulate all asset classes, including
                 the full asset lifecycle, broken down into specific business unit
-                 needs to plan for the present and predict future demands.
+                 needs to plan for the present and predict future demands.</span>>
              </p>
           </div>
         </div>
@@ -216,12 +225,19 @@
         
       <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <div id="barcelona" class="card" style="width: 18rem;">
-          <img src="img/park-barcelona.jpg" class="card-img-top" alt="London park">
+          <img src="img/park-barcelona.jpg" class="card-img-top" alt="Barcelona park">
           <div class="card-body">
             <h2>Parc Guell, Barcelona</h2>
             <p class="card-text">
               No list of city parks would be complete without making mention of
-              Barcelona’s Parc Güell. Designed by world-renowned architect,
+              Barcelona’s Parc Güell.
+              
+              
+          <button onclick="hidenTextFunctionB()">Less</button>
+          <button onclick="VisibleTextFunctionB()">More</button>
+          
+          <span id="barcelona-park-part">
+              Designed by world-renowned architect,
                Antoni Gaudì, and inspired by natural forms, the park features
                elaborate, organic-looking architecture, decorated with vibrant,
                colourful mosaics that is an absolute joy to behold. Gingerbread
@@ -231,6 +247,7 @@
                 the visitor to explore the twisting pathways toward the Casa
                 Museu Gaudí. Situated at the top of a terraced hill, the park
                  overlooks the city and offers a panoramic view of the bay.
+                 </span>
      </p>
           </div>
         </div>
@@ -243,13 +260,20 @@
       <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
 
         <div id="sanPaulo" class="card" style="width: 18rem;">
-          <img src="img/park-san-paulo.jpg" class="card-img-top" alt="London park">
+          <img src="img/park-san-paulo.jpg" class="card-img-top" alt="San Paulo park">
           <div class="card-body">
             <h2>Ibirapuera Park, San Paulo</h2>
             <p class="card-text">
               
             Often compared to New York City’s Central Park, Brazil’s Ibirapuera
              Park was built in 1954 to commemorate the city’s 400th anniversary.
+
+
+          <button onclick="hidenTextFunctionS()">Less</button>
+          <button onclick="VisibleTextFunctionS()">More</button>
+          
+
+          <span id="san-paulo-park-part">
               World-renowned Brazilian architect, Oscar Niemeyer, designed many
               of the signature buildings, including the flying-saucer-like planetarium
               and the auditorium, which is used for concerts. A centre of activity,
@@ -257,7 +281,7 @@
               jogging and cycling along its paths and bridges, or sunbathing near
                the duck pond with a book from the park’s own library. Offering
                 panoramic views of the city, the park is a vision of rolling
-                lawns and fantastic buildings.
+                lawns and fantastic buildings.</span>
           </p>
           </div>
           
@@ -266,20 +290,26 @@
 
       <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
 
-        <div  id="newYork" id="sanPaulo" class="card" style="width: 18rem;">
-          <img src="img/park-san-paulo.jpg" class="card-img-top" alt="London park">
+        <div  id="newYork"  class="card" style="width: 18rem;">
+          <img src="img/park-new-york.jpg" class="card-img-top" alt="new York park">
           <div class="card-body">
             <h2>Central Park, New York City</h2>
             <p class="card-text">
             Covering 843 acres in the heart of New York city, Central Park is not
             only one of the world’s most famous parks, having made its appearance
              in countless movies, but it’s one of the most beautiful too.
+
+
+             <button onclick="hidenTextFunction()">Less</button>
+             <button onclick="VisibleTextFunction()">More</button>
+             
+             <span id="new-York-park-part">
              Providing an escape from the hustle and bustle of the city that
              never sleeps, visitors can explore meandering pathways and woodland
               areas, picnic in open meadows, get their exercise in, or even take
               a rowboat out for a spin on one of its peaceful lakes. The concept
               of “a shared backyard” has never rung more true than when it comes
-              to Central Park, and no visit to New York is complete without
+              to Central Park, and no visit to New York is complete without</span>
         </p>
         </div>
         
@@ -379,121 +409,133 @@
 
 
 
+<!--
+
+<section  class="container" >
+  <div class="row">
+       <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+ 
 
 
-  
-<main class="container">
-  <h3></h3>
-  <div id="row-melburne">
-               <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="img/park-melbourne.jpg" class="card-img-top" alt="offer-melbourne">
-          <div class="card-body">
-            <h5 class="card-title">Unick opportunity to see sunrises in our park </h5>
-            <p class="card-text">Information about morning excursions in park</p>
-            <a href="#melburne" class="btn btn-primary" data-toggle="modal" data-target="#infoProduct" >Book</a>
-          </div>
-        </article>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/park-melbourne.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text"> of the card's content.</p>
+    <a href="#melburne" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
-        
-            <div id="row-london">
-                         <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/park-london.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text"> of the card's content.</p>
+    <a href="#london" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/park-barcelona.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text"> of the card's content.</p>
+    <a href="#barcelona" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+
+
+</article>
+</div>
+</section>
+
+-->
+
+
+<section class="container"> 
+<h3> MORE FUN with excursion</h3>
+
+  <div class="row">
+
+   
+                <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+                         <div id="row-melburne" >
+                          <img src="img/park-melbourne.jpg" class="card-img-top" alt="offer-melbourne">
+                        <div class="card-body">
+                        <h5 class="card-title">Unick opportunity to see sunrises in our park </h5>
+                         <p class="card-text">Information about morning excursions in park</p>
+                         <a href="#melburne" class="btn btn-primary" data-toggle="modal" data-target="#infoProduct" >Book</a>
+                        </div>
+                        </div>
+               </article>
+   
+            
+                  <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="row-london">
                     <img src="img/park-london.jpg" class="card-img-top" alt="offer">
                     <div class="card-body">
-                      <h5 class="card-title">Unick opportunity </h5>
+                      <h5 class="card-title"> Unick opportunity </h5>
                       <p class="card-text">Information about excursin in park</p>
                       <a href="#row-london" class="btn btn-primary" data-toggle="modal" data-target="#infoProduct" >Book</a>
                     </div>
+                  </div>
                   </article>
-          
+    
   
-                  <div id="row-barcelona">
       <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div id="row-barcelona">
           <img src="img/park-barcelona.jpg" class="card-img-top" alt="offer">
               <div class="card-body">
                 <h5 class="card-title">Unick opportunity </h5>
                 <p class="card-text">Information about excursin in park</p>
-                <a href="#barcelona" class="btn btn-primary">Book</a>
+                <a href="#barcelona" class="btn btn-primary" data-toggle="modal" data-target="#infoProduct">Book</a>
               </div>
+            </div>
       </article>
-
-      <div id="row-san-paulo">
+  
+      
         <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="row-san-paulo">
             <img src="img/park-san-paulo.jpg" class="card-img-top" alt="offer">
                   <div class="card-body">
-                        <h5 class="card-title">Unick opportunity </h5>
+                        <h5 class="card-title"> Unick opportunity </h5>
                         <p class="card-text">Information about excursin in park</p>
-                        <a href="#row-san-paulo" class="btn btn-primary">Book</a>
+                        <a href="#row-san-paulo" class="btn btn-primary" data-toggle="modal" data-target="#infoProduct" >Book</a>
                   </div>
+                </div>
         </article>
+  
 
-
-        <div id="row-new-york">
         <article class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="row-new-york">
           <img src="img/park-new-york.jpg" class="card-img-top" alt="offer">
                 <div class="card-body">
-                      <h5 class="card-title">Unick opportunity </h5>
+                      <h5 class="card-title"> Unick opportunity </h5>
                       <p class="card-text">Information about excursin in park</p>
-                      <a href="#" class="btn btn-primary">Book</a>
+                      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#infoProduct">Book</a>
                 </div>
+              </div> 
       </article>
+   
 
 </div>
-</main>
+</section>
 
 
 
 <footer>
 
-<div>
-    <fieldset>
-       <legend> For us: </legend>
-  
-  <br><br>
-  
-  <label for="name">Name:</label>
-  <input id="name" type="text" name="name" placeholder="Name" required><br><br>
-  
-  <label for="surname">Surname:</label>
-  <input id="surname" type="text" name="name" placeholder="Surname" required><br><br>
-  
-  <label for="tel">Phone number:</label>
-  <input id="tel" type="tel" name="tel" placeholder="067-341-134-2" required><br><br>
-  
-  <label for="date">Age:</label>
-  <input id="date" type="date" name="date"> <br><br>
-  
-  <input type="radio" name="sex" value="Male"> M
-  <input type="radio" name="sex" value="Female">F
-  <br><br>
-  
-  <label for="checkbox">Remember to  book a hotel</label>
-  <input type="checkbox" name="checkbox" value="checkbox">
-  <br><br>
-  
-  
-  <h3>What transport do you prefer?</h3>
-    <select id="cars" name="cars">
-        <option value="bus">Bus</option>
-        <option value="train">Train</option>
-        <option value="plane">Plane</option>
-        <option value="car">Car</option>
-    </select>
-   <br><br>
-  
-  
-  <textarea name="textarea" rows="15" cols="50"
-  minlength="10" maxlength="20" placeholder="About us"></textarea>
-  <br><br>
-  
-  <input type="submit" value="SUBMIT"> <br><br>
-  
-  </fieldset>
-  </div>
-  
+
+  <section class="container" > 
   <a href="#start">Back</a>
   
-  <div>
-    <h3 id="feedback"> This words for us:</h3>
+  <div >
+    <h3 id="feedback">  Words about us:</h3>
     
     <br><hr>
       <img src="img/feedback.jpg" alt="feedback" style="width:200px;height:150px;">
@@ -522,11 +564,33 @@
   
   <a href="#start">Back</a>
   
+  </section>>
   
-  </footer>
   
- 
   
+<section class="container" > 
+
+  <h1>Form for Booking</h1>
+  <form class="login-form">
+      <label>
+          Name: <input type="text" name="name">
+      </label>
+      <br>
+      <label>
+          Password: <input type="password" name="password">
+      </label>
+      <br>
+      <input type="submit">
+  </form>
+</section>
+
+
+
+</footer>
+
+
+
+
   
  <!-- Modal -->
 <div class="modal fade"  id="infoProduct" tabindex="-1" role="dialog" aria-labelledby="infoProductLabel" aria-hidden="true">
@@ -555,7 +619,7 @@
 </div>
 
 
-
+<script src="js/ajax-my-version.js"></script>
 <script src=js/index.js> </script>
 
 
